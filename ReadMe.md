@@ -23,5 +23,5 @@ It uses matplotlib to gather installed font files, then extracts the font-family
 >```
 > 5 corresponds to how many fonts will be generated. Remove the limiter when you have verified everything is working properly.
 
-> [!Info]
+> [!Note]
 > Currently limited to TTF
