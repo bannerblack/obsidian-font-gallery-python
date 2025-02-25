@@ -35,7 +35,9 @@ sort_fonts = False
 # END USER SETTINGS -------------------------------------------------------------------------------
 
 # check if obsidian folder exists
-if not os.path.exists(obsidian_folder): 
+if os.path.exists(obsidian_folder): 
+    obsidian_path = os.path.abspath(obsidian_folder)
+else:
     print("Error: Obsidian folder does not exist.")
     exit()
 
@@ -87,7 +89,7 @@ for font in installed_fonts:
             all_fonts.append(metadata["font_family"])
 
         # Create a note for the font
-        with open(os.path.join(obsidian_folder, metadata["font_family"] + ".md"), "w", encoding='utf-8') as f:
+        with open(os.path.join(obsidian_path, metadata["font_family"] + ".md"), "w", encoding='utf-8') as f:
             # Note: Explicit inline styles required for all text-containing elements. 
             # Space between will break obsidian view.
 
@@ -127,7 +129,7 @@ for font in installed_fonts:
 
 if create_toc:
     # create a table of contents
-    with open(os.path.join(obsidian_folder, "FontGallery.md"), "w", encoding='utf-8') as f:
+    with open(os.path.join(obsidian_path, "FontGallery.md"), "w", encoding='utf-8') as f:
         # Write heading of the ToC
         f.write(f'''
             <h1 style="font-size: 4em;">Font Gallery</h1><h4 style="text-align: left; font-weight: normal; font-size: 1.5rem; font-style:italic; margin-top: -20px">A collection of fonts installed on your system.</h4><hr>'''.strip())
