@@ -4,6 +4,8 @@ Obsidian Font Gallery is a small, single-file python script that generates markd
 
 It uses matplotlib to gather installed font files, then extracts the font-family from the font's metadata, which is the naming convention that is then used to reference the font from your system within the generated files.
 
+[Screenshot 2025-02-24 224316](https://github.com/user-attachments/assets/b5f2efb8-0dd5-4a5e-b7e3-a18c9689152b)
+
 ## To Use:
 
 1. Download the main.py file
@@ -24,4 +26,4 @@ It uses matplotlib to gather installed font files, then extracts the font-family
 > 5 corresponds to how many fonts will be generated. Remove the limiter when you have verified everything is working properly.
 
 > [!Note]
-> Currently limited to TTF
+> Currently limited to TTF!
