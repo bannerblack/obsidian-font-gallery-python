@@ -6,7 +6,7 @@
 
 # Obsidian Font Gallery
 # A python script to generate Obsidian notes to display each font installed on your system.
-# V1.0 by bannerblack - Feb 24, 2025
+# V0.1 by bannerblack - Feb 24, 2025
 
 import os
 # get fonts from system
