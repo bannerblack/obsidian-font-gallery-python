@@ -1,4 +1,4 @@
-# Obsidian Font Gallery
+# Obsidian Font Gallery (Python)
 
 Obsidian Font Gallery is a small, single-file python script that generates markdown files so that you can easily preview the fonts you have installed on your system.
 
